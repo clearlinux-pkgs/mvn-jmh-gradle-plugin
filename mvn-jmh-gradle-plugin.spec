@@ -4,7 +4,7 @@
 #
 Name     : mvn-jmh-gradle-plugin
 Version  : elease.0.4.5
-Release  : 2
+Release  : 3
 URL      : https://github.com/melix/jmh-gradle-plugin/archive/RELEASE_0_4_5.tar.gz
 Source0  : https://github.com/melix/jmh-gradle-plugin/archive/RELEASE_0_4_5.tar.gz
 Source1  : https://plugins.gradle.org/m2/me/champeau/gradle/jmh-gradle-plugin/0.4.5-beta-1/jmh-gradle-plugin-0.4.5-beta-1.jar
