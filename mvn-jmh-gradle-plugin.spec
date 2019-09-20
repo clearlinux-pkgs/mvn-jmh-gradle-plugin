@@ -4,11 +4,13 @@
 #
 Name     : mvn-jmh-gradle-plugin
 Version  : elease.0.4.5
-Release  : 3
+Release  : 4
 URL      : https://github.com/melix/jmh-gradle-plugin/archive/RELEASE_0_4_5.tar.gz
 Source0  : https://github.com/melix/jmh-gradle-plugin/archive/RELEASE_0_4_5.tar.gz
 Source1  : https://plugins.gradle.org/m2/me/champeau/gradle/jmh-gradle-plugin/0.4.5-beta-1/jmh-gradle-plugin-0.4.5-beta-1.jar
 Source2  : https://plugins.gradle.org/m2/me/champeau/gradle/jmh-gradle-plugin/0.4.5-beta-1/jmh-gradle-plugin-0.4.5-beta-1.pom
+Source3  : https://plugins.gradle.org/m2/me/champeau/gradle/jmh-gradle-plugin/0.4.8/jmh-gradle-plugin-0.4.8.jar
+Source4  : https://plugins.gradle.org/m2/me/champeau/gradle/jmh-gradle-plugin/0.4.8/jmh-gradle-plugin-0.4.8.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -56,6 +58,12 @@ cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/me/champeau/gradle/jmh-
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/me/champeau/gradle/jmh-gradle-plugin/0.4.5-beta-1
 cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/me/champeau/gradle/jmh-gradle-plugin/0.4.5-beta-1/jmh-gradle-plugin-0.4.5-beta-1.pom
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/me/champeau/gradle/jmh-gradle-plugin/0.4.8
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/me/champeau/gradle/jmh-gradle-plugin/0.4.8/jmh-gradle-plugin-0.4.8.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/me/champeau/gradle/jmh-gradle-plugin/0.4.8
+cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/me/champeau/gradle/jmh-gradle-plugin/0.4.8/jmh-gradle-plugin-0.4.8.pom
+
 
 %files
 %defattr(-,root,root,-)
@@ -64,6 +72,8 @@ cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/me/champeau/gradle/jmh-
 %defattr(-,root,root,-)
 /usr/share/java/.m2/repository/me/champeau/gradle/jmh-gradle-plugin/0.4.5-beta-1/jmh-gradle-plugin-0.4.5-beta-1.jar
 /usr/share/java/.m2/repository/me/champeau/gradle/jmh-gradle-plugin/0.4.5-beta-1/jmh-gradle-plugin-0.4.5-beta-1.pom
+/usr/share/java/.m2/repository/me/champeau/gradle/jmh-gradle-plugin/0.4.8/jmh-gradle-plugin-0.4.8.jar
+/usr/share/java/.m2/repository/me/champeau/gradle/jmh-gradle-plugin/0.4.8/jmh-gradle-plugin-0.4.8.pom
 
 %files license
 %defattr(0644,root,root,0755)
